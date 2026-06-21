@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hth · 生活里的小切口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fafaf8;
+      color: #1e1e1c;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+      flex: 1;
+    }
+
+    .story-opening {
+      font-size: 1.25rem;
+      letter-spacing: 0.02em;
+      border-left: 3px solid #d4a373;
+      padding-left: 1.25rem;
+      margin-bottom: 2.5rem;
+      color: #3b3b38;
+      font-weight: 390;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 1.8rem 0 1.2rem;
+      color: #262520;
+    }
+
+    .intro-para {
+      margin-bottom: 1.6rem;
+      font-size: 1rem;
+      color: #2c2c29;
+    }
+
+    .intro-para a {
+      color: #b07d53;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .intro-para a:hover {
+      border-bottom-color: #b07d53;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      margin: 2.4rem 0 2.8rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      padding: 0.6rem 0 0.6rem 0.5rem;
+      border-bottom: 1px solid #e8e4de;
+    }
+
+    .feature-marker {
+      font-size: 1.2rem;
+      line-height: 1;
+      color: #b07d53;
+      min-width: 1.8rem;
+    }
+
+    .feature-text {
+      font-size: 0.98rem;
+      color: #2e2e2b;
+    }
+
+    .scene-block {
+      background: #f4f1ed;
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      margin: 2.2rem 0 2.6rem;
+    }
+
+    .scene-block p {
+      font-size: 0.96rem;
+      color: #33312d;
+      margin-bottom: 0.8rem;
+    }
+
+    .scene-block .quiet-remark {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #6b6259;
+      font-size: 0.9rem;
+    }
+
+    .closing-words {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #ddd8d1;
+      font-size: 0.95rem;
+      color: #4d4a44;
+      line-height: 1.8;
+    }
+
+    .faq-mini {
+      margin-top: 2rem;
+      background: #fffefc;
+      border: 1px solid #e3ddd5;
+      border-radius: 16px;
+      padding: 1.4rem 1.6rem;
+    }
+
+    .faq-mini summary {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #2c2a26;
+      cursor: pointer;
+      padding: 0.3rem 0;
+    }
+
+    .faq-mini p {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      color: #514e48;
+    }
+
+    .footer-hint {
+      margin-top: 3.2rem;
+      font-size: 0.8rem;
+      color: #8f8a83;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 3rem 1.2rem 3rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .feature-item {
+        flex-wrap: wrap;
+      }
+      .scene-block {
+        padding: 1.4rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="story-opening">
+      “有些东西，你不需要刻意寻找——它就在日常的褶皱里。”
+    </div>
+
+    <h1>从切口进入，看见另一种节奏</h1>
+
+    <p class="intro-para">
+      我们太习惯被推送、被安排，却很少主动选择从哪里开始切入。一个短句、一次点击、一个不起眼的链接，都可能成为重新理解生活的起点。就像打开一个老朋友的来信，你知道里面没有惊喜，只有实在的、属于你自己的东西。
+    </p>
+    <p class="intro-para">
+      这里没有宏大的宣言，只有一些安静的功能和场景，它们围绕着一个简单的词——<a href="https://hthsport-cn.com">hth</a>——慢慢展开。它不大声，但一直在那里。
+    </p>
+
+    <div class="feature-list">
+      <div class="feature-item">
+        <span class="feature-marker">•</span>
+        <span class="feature-text"><strong>轻触发</strong> —— 不用等待加载的滞重感，每个操作都像翻开一页书那样自然</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-marker">•</span>
+        <span class="feature-text"><strong>少选择</strong> —— 把注意力集中在真正相关的事物上，而不是在无穷的列表里消耗</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-marker">•</span>
+        <span class="feature-text"><strong>低预期</strong> —— 不承诺改变你的人生，只希望成为你某个下午顺手打开的页面</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-marker">•</span>
+        <span class="feature-text"><strong>可停留</strong> —— 界面没有紧迫感，你随时可以离开，也随时可以回来</span>
+      </div>
+    </div>
+
+    <div class="scene-block">
+      <p>周末午后，咖啡凉了一半，你窝在沙发角落。手机屏幕亮着，你滑到一个不起眼的链接，<strong>hth</strong> 两个字安安静静地躺在句子里。你点了一下——没有弹窗，没有催促，只有内容本身。</p>
+      <p>也许你只是随便看看，也许你发现了某个合拍的细节。那都不重要，重要的是，这个动作是你自己选的。</p>
+      <div class="quiet-remark">——像一个不设防的入口，通往的不是别处，就是你当时想去的方向。</div>
+    </div>
+
+    <div class="closing-words">
+      我们始终相信，一个好的页面不需要声张自己的存在。它只是提供一个角落，让那些细小的兴趣、零散的好奇，都能找到一个温和的落脚处。如果你恰好路过，不妨花三分钟进去走走，<a href="https://hthsport-cn.com">hth</a> 就在那里，不多不少。
+    </div>
+
+    <details class="faq-mini">
+      <summary>一些常被问到的 · 摘要</summary>
+      <p><strong>Q：这个网站主要做什么？</strong><br>它围绕一个轻量的内容入口，提供简洁的信息浏览和场景体验，没有复杂的功能堆叠。</p>
+      <p><strong>Q：需要注册或登录吗？</strong><br>不需要。打开就能使用，离开也不用留下任何东西。</p>
+      <p><strong>Q：移动端体验怎么样？</strong><br>所有元素都针对窄屏优化，文字清晰，点击区域友好，单手操作无压力。</p>
+    </details>
+
+    <div class="footer-hint">
+      hth · 每一个切口都通向一个微小的完整世界
+    </div>
+  </div>
+</body>
+</html>
